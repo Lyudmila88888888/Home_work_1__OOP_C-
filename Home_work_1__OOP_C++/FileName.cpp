@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 
 
@@ -14,20 +14,20 @@ int main() {
 		std::string adress;
 	public:
 		Contact() {
-			std::cout << "Êîíñòðêóòîð ïî óìîë÷àíèþ.\n";
+			std::cout << "ÐšÐ¾Ð½ÑÑ‚Ñ€ÐºÑƒÑ‚Ð¾Ñ€ Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ.\n";
 			FullName = "no_FullName";
 			phonenum = "no_phonenum";
 			mobilenum = "no_mobilenum";
 			adress = "no_adress";
 		}
 		Contact(std::string other_FullName, std::string other_phonenum, std::string other_mobilenum, std::string other_adress) {
-			std::cout << "Ïàðàìåòðè÷åñêèé êîíñòðóêòîð.\n";
+			std::cout << "ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¸Ñ‡ÐµÑÐºÐ¸Ð¹ ÐºÐ¾Ð½ÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€.\n";
 			FullName = other_FullName;
 			phonenum = other_phonenum;
 			mobilenum = other_mobilenum;
 			adress = other_adress;
 		}
-		// Ãåòòåðû è ñåòòåðû
+		// Ð“ÐµÑ‚Ñ‚ÐµÑ€Ñ‹ Ð¸ ÑÐµÑ‚Ñ‚ÐµÑ€Ñ‹
 		std::string getFullName() {
 			return FullName;
 		}
@@ -61,38 +61,38 @@ int main() {
 		}
 
 		~Contact() {
-			std::cout << "Äåñòðóêòîð.\n";
+			std::cout << "Ð”ÐµÑÑ‚Ñ€ÑƒÐºÑ‚Ð¾Ñ€.\n";
 		}
 		};
 
-	Contact contact1("Ïåòðîâ Ô¸äîð Àëåêñååâè÷", "3435678", "89125487658", "óë. Ïóøêèíà, ä. 10");
-	Contact contact2("Èâàíîâ Ñòåïàí Ïåòðîâè÷", "3435689", "89154572351", "óë. Ëåðìîíòîâà, ä. 5");
-	Contact contact3("Ñòåïàíîâà Êñåíèÿ Àëåêñååâíà", "3437896", "9135697845", "óë. Ïîáåäû, ä. 18");
-	Contact contact4("ßêóíèíà Ñâåòëàíà Âàñèëüåâíà", "3434756", "89185631245", "óë. ßáëîíåâàÿ, ä. 1");
+	Contact contact1("ÐŸÐµÑ‚Ñ€Ð¾Ð² Ð¤Ñ‘Ð´Ð¾Ñ€ ÐÐ»ÐµÐºÑÐµÐµÐ²Ð¸Ñ‡", "3435678", "89125487658", "ÑƒÐ». ÐŸÑƒÑˆÐºÐ¸Ð½Ð°, Ð´. 10");
+	Contact contact2("Ð˜Ð²Ð°Ð½Ð¾Ð² Ð¡Ñ‚ÐµÐ¿Ð°Ð½ ÐŸÐµÑ‚Ñ€Ð¾Ð²Ð¸Ñ‡", "3435689", "89154572351", "ÑƒÐ». Ð›ÐµÑ€Ð¼Ð¾Ð½Ñ‚Ð¾Ð²Ð°, Ð´. 5");
+	Contact contact3("Ð¡Ñ‚ÐµÐ¿Ð°Ð½Ð¾Ð²Ð° ÐšÑÐµÐ½Ð¸Ñ ÐÐ»ÐµÐºÑÐµÐµÐ²Ð½Ð°", "3437896", "9135697845", "ÑƒÐ». ÐŸÐ¾Ð±ÐµÐ´Ñ‹, Ð´. 18");
+	Contact contact4("Ð¯ÐºÑƒÐ½Ð¸Ð½Ð° Ð¡Ð²ÐµÑ‚Ð»Ð°Ð½Ð° Ð’Ð°ÑÐ¸Ð»ÑŒÐµÐ²Ð½Ð°", "3434756", "89185631245", "ÑƒÐ». Ð¯Ð±Ð»Ð¾Ð½ÐµÐ²Ð°Ñ, Ð´. 1");
 
-	std::cout << "\nÊîíòàêò 1:\n";
-	std::cout << "ÔÈÎ: " << contact1.getFullName() << "\n";
-	std::cout << "Äîìàøíèé òåëåôîí: " << contact1.getPhonenum() << "\n";
-	std::cout << "Ëè÷íûé òåëåôîí: " << contact1.getMobilenum() << "\n";
-	std::cout << "Àäðåñ: " << contact1.getAdress() << "\n\n";
+	std::cout << "\nÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚ 1:\n";
+	std::cout << "Ð¤Ð˜Ðž: " << contact1.getFullName() << "\n";
+	std::cout << "Ð”Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact1.getPhonenum() << "\n";
+	std::cout << "Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact1.getMobilenum() << "\n";
+	std::cout << "ÐÐ´Ñ€ÐµÑ: " << contact1.getAdress() << "\n\n";
 
-	std::cout << "Êîíòàêò 2:\n";
-	std::cout << "ÔÈÎ: " << contact2.getFullName() << "\n";
-	std::cout << "Äîìàøíèé òåëåôîí: " << contact2.getPhonenum() << "\n";
-	std::cout << "Ëè÷íûé òåëåôîí: " << contact2.getMobilenum() << "\n";
-	std::cout << "Àäðåñ: " << contact2.getAdress() << "\n\n";
+	std::cout << "ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚ 2:\n";
+	std::cout << "Ð¤Ð˜Ðž: " << contact2.getFullName() << "\n";
+	std::cout << "Ð”Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact2.getPhonenum() << "\n";
+	std::cout << "Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact2.getMobilenum() << "\n";
+	std::cout << "ÐÐ´Ñ€ÐµÑ: " << contact2.getAdress() << "\n\n";
 
-	std::cout << "Êîíòàêò 3:\n";
-	std::cout << "ÔÈÎ: " << contact3.getFullName() << "\n";
-	std::cout << "Äîìàøíèé òåëåôîí: " << contact3.getPhonenum() << "\n";
-	std::cout << "Ëè÷íûé òåëåôîí: " << contact3.getMobilenum() << "\n";
-	std::cout << "Àäðåñ: " << contact3.getAdress() << "\n\n";
+	std::cout << "ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚ 3:\n";
+	std::cout << "Ð¤Ð˜Ðž: " << contact3.getFullName() << "\n";
+	std::cout << "Ð”Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact3.getPhonenum() << "\n";
+	std::cout << "Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact3.getMobilenum() << "\n";
+	std::cout << "ÐÐ´Ñ€ÐµÑ: " << contact3.getAdress() << "\n\n";
 
-	std::cout << "Êîíòàêò 4:\n";
-	std::cout << "ÔÈÎ: " << contact4.getFullName() << "\n";
-	std::cout << "Äîìàøíèé òåëåôîí: " << contact4.getPhonenum() << "\n";
-	std::cout << "Ëè÷íûé òåëåôîí: " << contact4.getMobilenum() << "\n";
-	std::cout << "Àäðåñ: " << contact4.getAdress() << "\n\n";
+	std::cout << "ÐšÐ¾Ð½Ñ‚Ð°ÐºÑ‚ 4:\n";
+	std::cout << "Ð¤Ð˜Ðž: " << contact4.getFullName() << "\n";
+	std::cout << "Ð”Ð¾Ð¼Ð°ÑˆÐ½Ð¸Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact4.getPhonenum() << "\n";
+	std::cout << "Ð›Ð¸Ñ‡Ð½Ñ‹Ð¹ Ñ‚ÐµÐ»ÐµÑ„Ð¾Ð½: " << contact4.getMobilenum() << "\n";
+	std::cout << "ÐÐ´Ñ€ÐµÑ: " << contact4.getAdress() << "\n\n";
 
 	return 0;
 	}
